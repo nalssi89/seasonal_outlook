@@ -1,0 +1,172 @@
+issue_date = "2026-04-15"
+data_status = "current"
+
+[[factors]]
+id = "enso"
+name = "ENSO"
+family = "slow"
+state = "neutral_to_el_nino_watch"
+signal = 1
+confidence = 0.78
+source_name = "NOAA CPC ENSO"
+source_url = "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml?_bhlid=aa53132c1acc5d24129e855461cc692e294e0d8e"
+summary = "ENSO-neutral persists in April 2026, with El Nino emergence favored into boreal summer."
+effects = [
+  { region = "korea", variable = "temperature", lead = 1, magnitude = 0.030 },
+  { region = "korea", variable = "temperature", lead = 2, magnitude = 0.035 },
+  { region = "korea", variable = "temperature", lead = 3, magnitude = 0.030 },
+  { region = "east_asia", variable = "temperature", lead = 1, magnitude = 0.035 },
+  { region = "east_asia", variable = "temperature", lead = 2, magnitude = 0.040 },
+  { region = "east_asia", variable = "temperature", lead = 3, magnitude = 0.035 },
+  { region = "korea", variable = "precipitation", lead = 2, magnitude = 0.015 },
+  { region = "korea", variable = "precipitation", lead = 3, magnitude = 0.020 },
+  { region = "east_asia", variable = "precipitation", lead = 2, magnitude = 0.010 },
+  { region = "east_asia", variable = "precipitation", lead = 3, magnitude = 0.020 }
+]
+
+[[factors]]
+id = "pdo"
+name = "PDO"
+family = "slow"
+state = "negative"
+signal = -1
+confidence = 0.66
+source_name = "NOAA PSL PDO"
+source_url = "https://psl.noaa.gov/pdo/"
+summary = "Negative PDO background slightly tempers warm-signal amplification over the North Pacific sector."
+effects = [
+  { region = "korea", variable = "temperature", lead = 1, magnitude = 0.010 },
+  { region = "korea", variable = "temperature", lead = 2, magnitude = 0.010 },
+  { region = "east_asia", variable = "temperature", lead = 1, magnitude = 0.015 },
+  { region = "east_asia", variable = "temperature", lead = 2, magnitude = 0.015 },
+  { region = "east_asia", variable = "temperature", lead = 3, magnitude = 0.015 }
+]
+
+[[factors]]
+id = "iod_iob"
+name = "IOD/IOB"
+family = "slow"
+state = "near_neutral_with_warm_iob_tendency"
+signal = 1
+confidence = 0.55
+source_name = "JMA El Nino Outlook"
+source_url = "https://ds.data.jma.go.jp/tcc/tcc/products/elnino/outlook.html"
+summary = "IOD remains near neutral while Indian Ocean basin warmth modestly supports summer moisture transport."
+effects = [
+  { region = "korea", variable = "precipitation", lead = 2, magnitude = 0.010 },
+  { region = "korea", variable = "precipitation", lead = 3, magnitude = 0.015 },
+  { region = "east_asia", variable = "precipitation", lead = 2, magnitude = 0.012 },
+  { region = "east_asia", variable = "precipitation", lead = 3, magnitude = 0.018 }
+]
+
+[[factors]]
+id = "ao_nao"
+name = "AO/NAO"
+family = "fast"
+state = "weak_positive"
+signal = 1
+confidence = 0.42
+source_name = "NOAA CPC Teleconnections"
+source_url = "https://www.cpc.ncep.noaa.gov/products/precip/CWlink/daily_ao_index/teleconnections.shtml"
+summary = "High-latitude circulation is not strongly locked, so AO/NAO contributes as a low-weight transitional factor."
+effects = [
+  { region = "korea", variable = "temperature", lead = 1, magnitude = 0.012 },
+  { region = "east_asia", variable = "temperature", lead = 1, magnitude = 0.015 }
+]
+
+[[factors]]
+id = "pj"
+name = "Pacific-Japan Pattern"
+family = "fast"
+state = "weak_positive_projection"
+signal = 1
+confidence = 0.48
+source_name = "Derived PJ Index"
+source_url = "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-pressure-levels-monthly-means"
+summary = "A weak positive PJ projection slightly lifts near-term East Asia rainfall and warmth risk, strongest for M+1."
+effects = [
+  { region = "korea", variable = "temperature", lead = 1, magnitude = 0.010 },
+  { region = "korea", variable = "precipitation", lead = 1, magnitude = 0.012 },
+  { region = "east_asia", variable = "temperature", lead = 1, magnitude = 0.012 },
+  { region = "east_asia", variable = "precipitation", lead = 1, magnitude = 0.015 }
+]
+
+[[factors]]
+id = "bsiso"
+name = "BSISO"
+family = "fast"
+state = "suppressed_then_reactivating"
+signal = 1
+confidence = 0.50
+source_name = "IPRC BSISO"
+source_url = "https://iprc.soest.hawaii.edu/users/jylee/bsiso/main.htm"
+summary = "BSISO signal is more relevant to M+1, with rapidly decreasing utility beyond the first target month."
+effects = [
+  { region = "korea", variable = "precipitation", lead = 1, magnitude = 0.015 },
+  { region = "east_asia", variable = "precipitation", lead = 1, magnitude = 0.020 }
+]
+
+[[factors]]
+id = "monsoon"
+name = "Asian Monsoon Indices"
+family = "fast"
+state = "early_transition"
+signal = 1
+confidence = 0.46
+source_name = "JMA Asian Monsoon Monitoring"
+source_url = "https://ds.data.jma.go.jp/tcc/tcc/products/clisys/ASIA_TCC/monsoon_index.html"
+summary = "Monsoon transition diagnostics support near-term precipitation uplift but with modest confidence."
+effects = [
+  { region = "korea", variable = "precipitation", lead = 1, magnitude = 0.010 },
+  { region = "east_asia", variable = "precipitation", lead = 1, magnitude = 0.012 }
+]
+
+[[factors]]
+id = "sea_ice"
+name = "Arctic Sea Ice"
+family = "slow"
+state = "low"
+signal = 1
+confidence = 0.37
+source_name = "NSIDC Sea Ice"
+source_url = "https://nsidc.org/sea-ice-today/"
+summary = "Sea-ice anomalies are treated as a low-confidence background modifier rather than a stand-alone forecast anchor."
+effects = [
+  { region = "korea", variable = "temperature", lead = 1, magnitude = 0.006 },
+  { region = "korea", variable = "temperature", lead = 2, magnitude = 0.006 },
+  { region = "east_asia", variable = "temperature", lead = 1, magnitude = 0.008 },
+  { region = "east_asia", variable = "temperature", lead = 2, magnitude = 0.008 }
+]
+
+[[factors]]
+id = "snow_cover"
+name = "Eurasian Snow Cover"
+family = "slow"
+state = "below_normal"
+signal = 1
+confidence = 0.34
+source_name = "Rutgers Global Snow Lab"
+source_url = "https://climate.rutgers.edu/snowcover/index.php/svg/chart_vis.php?ui_set=0&ui_week=5&ui_year=2026"
+summary = "Snow-cover anomaly enters the system only as a secondary background signal."
+effects = [
+  { region = "korea", variable = "temperature", lead = 1, magnitude = 0.005 },
+  { region = "east_asia", variable = "temperature", lead = 1, magnitude = 0.006 }
+]
+
+[[factors]]
+id = "soil_moisture"
+name = "Soil Moisture"
+family = "slow"
+state = "dry_bias_north_of_korea"
+signal = 1
+confidence = 0.40
+source_name = "NOAA CPC Soil Moisture"
+source_url = "https://www.cpc.ncep.noaa.gov/soilmst/sm_glb.html"
+summary = "Soil-moisture anomalies are used as a land-surface persistence term with modest positive temperature contribution."
+effects = [
+  { region = "korea", variable = "temperature", lead = 1, magnitude = 0.008 },
+  { region = "korea", variable = "temperature", lead = 2, magnitude = 0.008 },
+  { region = "east_asia", variable = "temperature", lead = 1, magnitude = 0.010 },
+  { region = "east_asia", variable = "temperature", lead = 2, magnitude = 0.010 }
+]
+

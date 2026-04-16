@@ -1,0 +1,64 @@
+[system]
+timezone = "Asia/Seoul"
+issue_hour_kst = 9
+reference_period = "1991-2020"
+default_adjustment_cap = 0.10
+extended_adjustment_cap = 0.15
+reports_dir = "reports"
+priors_dir = "inputs/dynamic_priors"
+factors_dir = "inputs/climate_factors"
+factor_reports_dir = "inputs/climate_factor_reports"
+state_dir = "state"
+psl_indices_dir = "state/psl_indices"
+objective_dir = "state/objective_forecast"
+history_file = "state/results_ledger.jsonl"
+
+[lead_multipliers.slow]
+1 = 1.0
+2 = 1.0
+3 = 1.0
+
+[lead_multipliers.fast]
+1 = 1.0
+2 = 0.6
+3 = 0.2
+
+[regions.korea]
+label = "Korean Peninsula"
+lat_min = 33.0
+lat_max = 39.5
+lon_min = 124.0
+lon_max = 131.0
+
+[regions.east_asia]
+label = "East Asia"
+lat_min = 20.0
+lat_max = 55.0
+lon_min = 100.0
+lon_max = 150.0
+
+[variables.temperature]
+label = "2m Temperature"
+
+[variables.precipitation]
+label = "Accumulated Precipitation"
+
+[[models]]
+id = "c3s"
+label = "Copernicus C3S Multi-System"
+default_weight = 1.0
+
+[[models]]
+id = "nmme"
+label = "NMME"
+default_weight = 0.95
+
+[[models]]
+id = "cfsv2"
+label = "NCEP CFSv2"
+default_weight = 0.85
+
+[[models]]
+id = "jma"
+label = "JMA/MRI-CPS"
+default_weight = 0.90

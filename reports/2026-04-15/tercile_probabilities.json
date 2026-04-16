@@ -1,0 +1,254 @@
+[
+  {
+    "issue_date": "2026-04-15",
+    "region": "korea",
+    "variable": "temperature",
+    "lead": 1,
+    "target_year": 2026,
+    "target_month": 5,
+    "prior": {
+      "lower": 0.2119,
+      "normal": 0.3388,
+      "upper": 0.4493
+    },
+    "posterior": {
+      "lower": 0.1883,
+      "normal": 0.3286,
+      "upper": 0.4831
+    },
+    "dominant_category": "upper",
+    "total_adjustment": 0.0338,
+    "model_agreement": 1.0
+  },
+  {
+    "issue_date": "2026-04-15",
+    "region": "korea",
+    "variable": "temperature",
+    "lead": 2,
+    "target_year": 2026,
+    "target_month": 6,
+    "prior": {
+      "lower": 0.2219,
+      "normal": 0.3488,
+      "upper": 0.4293
+    },
+    "posterior": {
+      "lower": 0.2036,
+      "normal": 0.3409,
+      "upper": 0.4554
+    },
+    "dominant_category": "upper",
+    "total_adjustment": 0.0261,
+    "model_agreement": 1.0
+  },
+  {
+    "issue_date": "2026-04-15",
+    "region": "korea",
+    "variable": "temperature",
+    "lead": 3,
+    "target_year": 2026,
+    "target_month": 7,
+    "prior": {
+      "lower": 0.2356,
+      "normal": 0.3535,
+      "upper": 0.4109
+    },
+    "posterior": {
+      "lower": 0.2192,
+      "normal": 0.3465,
+      "upper": 0.4343
+    },
+    "dominant_category": "upper",
+    "total_adjustment": 0.0234,
+    "model_agreement": 1.0
+  },
+  {
+    "issue_date": "2026-04-15",
+    "region": "korea",
+    "variable": "precipitation",
+    "lead": 1,
+    "target_year": 2026,
+    "target_month": 5,
+    "prior": {
+      "lower": 0.2807,
+      "normal": 0.3615,
+      "upper": 0.3578
+    },
+    "posterior": {
+      "lower": 0.2682,
+      "normal": 0.3561,
+      "upper": 0.3757
+    },
+    "dominant_category": "upper",
+    "total_adjustment": 0.0179,
+    "model_agreement": 0.75
+  },
+  {
+    "issue_date": "2026-04-15",
+    "region": "korea",
+    "variable": "precipitation",
+    "lead": 2,
+    "target_year": 2026,
+    "target_month": 6,
+    "prior": {
+      "lower": 0.2607,
+      "normal": 0.345,
+      "upper": 0.3944
+    },
+    "posterior": {
+      "lower": 0.2487,
+      "normal": 0.3398,
+      "upper": 0.4116
+    },
+    "dominant_category": "upper",
+    "total_adjustment": 0.0172,
+    "model_agreement": 1.0
+  },
+  {
+    "issue_date": "2026-04-15",
+    "region": "korea",
+    "variable": "precipitation",
+    "lead": 3,
+    "target_year": 2026,
+    "target_month": 7,
+    "prior": {
+      "lower": 0.2472,
+      "normal": 0.3346,
+      "upper": 0.4182
+    },
+    "posterior": {
+      "lower": 0.2305,
+      "normal": 0.3274,
+      "upper": 0.4421
+    },
+    "dominant_category": "upper",
+    "total_adjustment": 0.0239,
+    "model_agreement": 1.0
+  },
+  {
+    "issue_date": "2026-04-15",
+    "region": "east_asia",
+    "variable": "temperature",
+    "lead": 1,
+    "target_year": 2026,
+    "target_month": 5,
+    "prior": {
+      "lower": 0.1856,
+      "normal": 0.326,
+      "upper": 0.4884
+    },
+    "posterior": {
+      "lower": 0.1587,
+      "normal": 0.3145,
+      "upper": 0.5269
+    },
+    "dominant_category": "upper",
+    "total_adjustment": 0.0385,
+    "model_agreement": 1.0
+  },
+  {
+    "issue_date": "2026-04-15",
+    "region": "east_asia",
+    "variable": "temperature",
+    "lead": 2,
+    "target_year": 2026,
+    "target_month": 6,
+    "prior": {
+      "lower": 0.1984,
+      "normal": 0.3397,
+      "upper": 0.4619
+    },
+    "posterior": {
+      "lower": 0.1786,
+      "normal": 0.3312,
+      "upper": 0.4902
+    },
+    "dominant_category": "upper",
+    "total_adjustment": 0.0283,
+    "model_agreement": 1.0
+  },
+  {
+    "issue_date": "2026-04-15",
+    "region": "east_asia",
+    "variable": "temperature",
+    "lead": 3,
+    "target_year": 2026,
+    "target_month": 7,
+    "prior": {
+      "lower": 0.2156,
+      "normal": 0.3463,
+      "upper": 0.4382
+    },
+    "posterior": {
+      "lower": 0.2034,
+      "normal": 0.341,
+      "upper": 0.4556
+    },
+    "dominant_category": "upper",
+    "total_adjustment": 0.0174,
+    "model_agreement": 1.0
+  },
+  {
+    "issue_date": "2026-04-15",
+    "region": "east_asia",
+    "variable": "precipitation",
+    "lead": 1,
+    "target_year": 2026,
+    "target_month": 5,
+    "prior": {
+      "lower": 0.2708,
+      "normal": 0.3738,
+      "upper": 0.3554
+    },
+    "posterior": {
+      "lower": 0.2549,
+      "normal": 0.367,
+      "upper": 0.3782
+    },
+    "dominant_category": "upper",
+    "total_adjustment": 0.0227,
+    "model_agreement": 1.0
+  },
+  {
+    "issue_date": "2026-04-15",
+    "region": "east_asia",
+    "variable": "precipitation",
+    "lead": 2,
+    "target_year": 2026,
+    "target_month": 6,
+    "prior": {
+      "lower": 0.2508,
+      "normal": 0.3549,
+      "upper": 0.3944
+    },
+    "posterior": {
+      "lower": 0.2407,
+      "normal": 0.3505,
+      "upper": 0.4088
+    },
+    "dominant_category": "upper",
+    "total_adjustment": 0.0144,
+    "model_agreement": 1.0
+  },
+  {
+    "issue_date": "2026-04-15",
+    "region": "east_asia",
+    "variable": "precipitation",
+    "lead": 3,
+    "target_year": 2026,
+    "target_month": 7,
+    "prior": {
+      "lower": 0.2335,
+      "normal": 0.3449,
+      "upper": 0.4216
+    },
+    "posterior": {
+      "lower": 0.2157,
+      "normal": 0.3372,
+      "upper": 0.4471
+    },
+    "dominant_category": "upper",
+    "total_adjustment": 0.0255,
+    "model_agreement": 1.0
+  }
+]

@@ -1,0 +1,232 @@
+{
+  "issue_date": "2026-04-15",
+  "targets": [
+    "2026-05",
+    "2026-06",
+    "2026-07"
+  ],
+  "temperature_summary": "기온은 M+1~M+3 모두 상위 3분위 우세가 유지됩니다. ENSO 중립 이행기에도 동아시아 대규모 온난 배경과 한반도 주변 해역의 warm boundary condition이 남아 있어, 평균기온 자체가 평년보다 높을 가능성이 상대적으로 큽니다.",
+  "precipitation_summary": "강수는 세 달 모두 상위 3분위가 가장 높지만, M+1은 normal과의 차이가 작고 M+2~M+3도 강한 wet call로 보기에는 근거가 제한적입니다. 따라서 '평년과 비슷하거나 다소 많을 가능성'으로 읽는 것이 가장 객관적입니다.",
+  "factors": [
+    {
+      "id": "enso",
+      "name": "ENSO / Niño 3.4",
+      "importance": "A",
+      "role": "핵심",
+      "latest_value": -0.06,
+      "latest_month": "2026-03",
+      "freshness": "fresh",
+      "series_units": "°C",
+      "chart_path": "D:\\WORK\\Projects\\Codex\\seasonal_outlook\\reports\\2026-04-15\\climate_factor_assets\\enso_timeseries.png",
+      "references": [
+        {
+          "title": "NOAA CPC ENSO Diagnostic Discussion (2026-04-10)",
+          "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml"
+        },
+        {
+          "title": "JMA El Niño Monitoring Indices",
+          "url": "https://ds.data.jma.go.jp/tcc/tcc/products/elnino/index/"
+        },
+        {
+          "title": "Nature Communications 2024, Why East Asian monsoon anomalies are more robust in post El Niño than in post La Niña summers",
+          "url": "https://www.nature.com/articles/s41467-024-51885-7"
+        },
+        {
+          "title": "Xie et al. 2009, Indian Ocean capacitor effect on Indo-western Pacific climate during the summer following El Niño",
+          "url": "https://doi.org/10.1175/2008JCLI2544.1"
+        }
+      ]
+    },
+    {
+      "id": "wp",
+      "name": "Western Pacific pattern",
+      "importance": "A",
+      "role": "핵심",
+      "latest_value": -2.13,
+      "latest_month": "2026-03",
+      "freshness": "fresh",
+      "series_units": "standardized",
+      "chart_path": "D:\\WORK\\Projects\\Codex\\seasonal_outlook\\reports\\2026-04-15\\climate_factor_assets\\wp_timeseries.png",
+      "references": [
+        {
+          "title": "CPC tele_index.nh",
+          "url": "https://ftp.cpc.ncep.noaa.gov/wd52dg/data/indices/tele_index.nh"
+        },
+        {
+          "title": "CPC Northern Hemisphere Teleconnection Patterns",
+          "url": "https://www.cpc.ncep.noaa.gov/data/teledoc/telecontents.shtml"
+        },
+        {
+          "title": "JGR Atmospheres 2023, Teleconnection pathways associated with the western Pacific pattern and East Asia",
+          "url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2022JD037905"
+        }
+      ]
+    },
+    {
+      "id": "iobw",
+      "name": "Indian Ocean Basin / IOBW",
+      "importance": "B",
+      "role": "보조",
+      "latest_value": -0.02,
+      "latest_month": "2026-03",
+      "freshness": "fresh",
+      "series_units": "°C",
+      "chart_path": "D:\\WORK\\Projects\\Codex\\seasonal_outlook\\reports\\2026-04-15\\climate_factor_assets\\iobw_timeseries.png",
+      "references": [
+        {
+          "title": "WMO Global Seasonal Climate Update for April-May-June 2026 (2026-03-23)",
+          "url": "https://wmo.int/media/update/global-seasonal-climate-update-april-may-june-2026"
+        },
+        {
+          "title": "JMA El Niño Monitoring Indices / IOBW deviation",
+          "url": "https://ds.data.jma.go.jp/tcc/tcc/products/elnino/index/"
+        },
+        {
+          "title": "Yang et al. 2007, Impact of the Indian Ocean SST basin mode on the Asian summer monsoon",
+          "url": "https://doi.org/10.1029/2006GL028571"
+        },
+        {
+          "title": "Frontiers in Climate 2022, Drivers and characteristics of the Indo-western Pacific Ocean capacitor",
+          "url": "https://www.frontiersin.org/journals/climate/articles/10.3389/fclim.2022.1014138/full"
+        }
+      ]
+    },
+    {
+      "id": "ao",
+      "name": "Arctic Oscillation",
+      "importance": "B",
+      "role": "보조",
+      "latest_value": 2.0437,
+      "latest_month": "2026-03",
+      "freshness": "fresh",
+      "series_units": "standardized",
+      "chart_path": "D:\\WORK\\Projects\\Codex\\seasonal_outlook\\reports\\2026-04-15\\climate_factor_assets\\ao_timeseries.png",
+      "references": [
+        {
+          "title": "CPC Arctic Oscillation page",
+          "url": "https://www.cpc.ncep.noaa.gov/products/precip/CWlink/daily_ao_index/new.ao.shtml"
+        },
+        {
+          "title": "Chen et al. 2017 review, Impact of Arctic Oscillation on the East Asian climate",
+          "url": "https://doi.org/10.1016/j.earscirev.2016.10.014"
+        },
+        {
+          "title": "Climate Research 2019, Linkage between the Arctic Oscillation and East Asian summer climate",
+          "url": "https://www.int-res.com/articles/cr_oa/c078p237.pdf"
+        }
+      ]
+    },
+    {
+      "id": "qbo",
+      "name": "QBO 30 hPa",
+      "importance": "B",
+      "role": "조건부",
+      "latest_value": -23.13,
+      "latest_month": "2026-02",
+      "freshness": "usable_with_lag",
+      "series_units": "m/s",
+      "chart_path": "D:\\WORK\\Projects\\Codex\\seasonal_outlook\\reports\\2026-04-15\\climate_factor_assets\\qbo_timeseries.png",
+      "references": [
+        {
+          "title": "NOAA PSL QBO page",
+          "url": "https://psl.noaa.gov/data/timeseries/month/QBO/"
+        },
+        {
+          "title": "ACP 2023, Modulation of the intraseasonal variability in early summer precipitation in eastern China by the Quasi-Biennial Oscillation and the Madden-Julian Oscillation",
+          "url": "https://acp.copernicus.org/articles/23/14903/2023/acp-23-14903-2023.html"
+        },
+        {
+          "title": "ACP 2023, Summertime ozone pollution in China affected by stratospheric quasi-biennial oscillation",
+          "url": "https://acp.copernicus.org/articles/23/1533/2023/acp-23-1533-2023.html"
+        }
+      ]
+    },
+    {
+      "id": "pdo",
+      "name": "Pacific Decadal Oscillation",
+      "importance": "C",
+      "role": "배경장",
+      "latest_value": -1.222,
+      "latest_month": "2025-12",
+      "freshness": "usable_with_lag",
+      "series_units": "°C",
+      "chart_path": "D:\\WORK\\Projects\\Codex\\seasonal_outlook\\reports\\2026-04-15\\climate_factor_assets\\pdo_timeseries.png",
+      "references": [
+        {
+          "title": "NOAA PSL PDO page",
+          "url": "https://psl.noaa.gov/data/timeseries/month/PDO/"
+        },
+        {
+          "title": "Newman et al. 2016, The Pacific Decadal Oscillation, Revisited",
+          "url": "https://doi.org/10.1175/JCLI-D-15-0508.1"
+        },
+        {
+          "title": "Scientific Reports 2016, The Pacific Ocean variation pattern and East Asia summer monsoon rainfall",
+          "url": "https://www.nature.com/articles/srep32725"
+        }
+      ]
+    }
+  ],
+  "korea_probabilities": [
+    {
+      "variable": "temperature",
+      "lead": 1,
+      "target": "2026-05",
+      "lower": 0.1883,
+      "normal": 0.3286,
+      "upper": 0.4831,
+      "dominant_category": "upper",
+      "model_agreement": 1.0
+    },
+    {
+      "variable": "temperature",
+      "lead": 2,
+      "target": "2026-06",
+      "lower": 0.2036,
+      "normal": 0.3409,
+      "upper": 0.4554,
+      "dominant_category": "upper",
+      "model_agreement": 1.0
+    },
+    {
+      "variable": "temperature",
+      "lead": 3,
+      "target": "2026-07",
+      "lower": 0.2192,
+      "normal": 0.3465,
+      "upper": 0.4343,
+      "dominant_category": "upper",
+      "model_agreement": 1.0
+    },
+    {
+      "variable": "precipitation",
+      "lead": 1,
+      "target": "2026-05",
+      "lower": 0.2682,
+      "normal": 0.3561,
+      "upper": 0.3757,
+      "dominant_category": "upper",
+      "model_agreement": 0.75
+    },
+    {
+      "variable": "precipitation",
+      "lead": 2,
+      "target": "2026-06",
+      "lower": 0.2487,
+      "normal": 0.3398,
+      "upper": 0.4116,
+      "dominant_category": "upper",
+      "model_agreement": 1.0
+    },
+    {
+      "variable": "precipitation",
+      "lead": 3,
+      "target": "2026-07",
+      "lower": 0.2305,
+      "normal": 0.3274,
+      "upper": 0.4421,
+      "dominant_category": "upper",
+      "model_agreement": 1.0
+    }
+  ]
+}

@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>C3S Multi-system 3개월 전망 슬라이드</title>
+  <style>
+    :root {
+      --bg: #f3efe7;
+      --paper: #fffaf2;
+      --ink: #172026;
+      --muted: #5b666d;
+      --line: #d8cfbf;
+      --accent: #8d2d1b;
+      --accent-2: #0d5a6b;
+      --soft: #efe3cf;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Malgun Gothic", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, #f8e9d8 0, transparent 26%),
+        radial-gradient(circle at bottom right, #ddebf0 0, transparent 28%),
+        var(--bg);
+    }
+    .deck {
+      width: 1366px;
+      margin: 0 auto;
+      padding: 24px 0 60px;
+    }
+    .slide {
+      width: 1366px;
+      min-height: 768px;
+      margin: 0 auto 28px;
+      background: rgba(255, 250, 242, 0.92);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: 0 18px 45px rgba(40, 28, 8, 0.09);
+      padding: 34px 40px 30px;
+      position: relative;
+      overflow: hidden;
+    }
+    .slide::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto auto 0;
+      width: 100%;
+      height: 8px;
+      background: linear-gradient(90deg, var(--accent), #c06b2b, var(--accent-2));
+    }
+    h1, h2, h3, p { margin: 0; }
+    .eyebrow {
+      color: var(--accent);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .title {
+      font-size: 34px;
+      line-height: 1.2;
+      margin-bottom: 12px;
+      font-weight: 800;
+    }
+    .subtitle {
+      font-size: 17px;
+      color: var(--muted);
+      line-height: 1.55;
+      max-width: 1180px;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 26px;
+      margin-top: 28px;
+    }
+    .panel {
+      background: rgba(255,255,255,0.72);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 18px 18px 16px;
+    }
+    .panel h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .panel p, .panel li, .note, .small {
+      color: #354149;
+      line-height: 1.55;
+      font-size: 15px;
+    }
+    ul {
+      margin: 10px 0 0;
+      padding-left: 20px;
+    }
+    .judgement {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .card {
+      border-radius: 18px;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, #fffefb, #f4ebdc);
+    }
+    .card strong {
+      display: block;
+      font-size: 14px;
+      color: var(--accent-2);
+      margin-bottom: 6px;
+    }
+    .card span {
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .slide-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 16px;
+    }
+    .slide-no {
+      font-size: 13px;
+      color: var(--muted);
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(239, 227, 207, 0.9);
+      border: 1px solid var(--line);
+      white-space: nowrap;
+    }
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .image-grid.double {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto auto;
+    }
+    figure {
+      margin: 0;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 10px;
+      box-shadow: 0 10px 22px rgba(44, 35, 15, 0.06);
+    }
+    figure img {
+      width: 100%;
+      border-radius: 12px;
+      display: block;
+      background: #fff;
+    }
+    figure figcaption {
+      margin-top: 8px;
+      font-size: 13px;
+      color: var(--muted);
+      text-align: center;
+    }
+    .summary-box {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .summary-box .panel {
+      padding: 16px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 18px;
+      font-size: 15px;
+      background: rgba(255,255,255,0.72);
+      border-radius: 18px;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #efe4d2;
+      font-size: 14px;
+    }
+    tr:last-child td { border-bottom: none; }
+    .footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    @media print {
+      body { background: white; }
+      .deck { width: auto; padding: 0; }
+      .slide {
+        page-break-after: always;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+        width: auto;
+        min-height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="deck">
+    <section class="slide">
+      <div class="eyebrow">C3S Multi-system</div>
+      <h1 class="title">동아시아-한반도 3개월 전망 슬라이드</h1>
+      <p class="subtitle">
+        2026년 4월 1일 초기장의 Copernicus C3S multi-system 1개월 지도(`2026년 5월, 6월, 7월`)를
+        월별로 교차해석한 결과입니다. 이번 버전은 `tercile summary`와 `ensemble mean anomaly`를 동시에 사용해
+        범주 전망과 물리적 공간 일관성을 함께 설명하도록 다시 구성했습니다.
+      </p>
+
+      <div class="grid-2">
+        <div class="panel">
+          <h3>해석 원칙</h3>
+          <ul>
+            <li><strong>Tercile summary</strong>는 주 판단 근거입니다. 이유는 모델별 기후 PDF와 공통 hindcast(`1993-2016`)를 사용해 보정한 범주 확률이기 때문입니다.</li>
+            <li><strong>Ensemble mean anomaly</strong>는 보조 근거입니다. 공간 구조와 물리적 패턴을 확인하는 데 좋지만, 확률 자체는 아닙니다.</li>
+            <li><strong>MSLP anomaly</strong>는 순환장 지지 여부를 보는 보조 자료입니다. 강수 범주를 직접 판정하는 용도로 과대해석하면 안 됩니다.</li>
+            <li>C3S 설명문 자체에 따르면 tercile summary는 `40% 초과` 지역을 요약한 그림이고, 유의성 검정은 적용되지 않습니다.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>이번 자료에서 내린 판단</h3>
+          <div class="judgement">
+            <div class="card">
+              <strong>기온</strong>
+              <span>Tercile 주근거 사용이 합리적</span>
+              <p class="small">한반도와 일본 주변에서 3개월 내내 warm signal이 일관적입니다.</p>
+            </div>
+            <div class="card">
+              <strong>강수</strong>
+              <span>Tercile 단독 사용은 조심</span>
+              <p class="small">한반도는 강한 wet core가 아니라 약한 상위 또는 중립 경계에 더 가깝습니다.</p>
+            </div>
+            <div class="card">
+              <strong>Anomaly 차트</strong>
+              <span>보조 진단용으로 합리적</span>
+              <p class="small">기온은 매우 유용하고, 강수는 지역성 때문에 단독 판정용으로는 약합니다.</p>
+            </div>
+          </div>
+          <div class="footer">
+            Sources: C3S multi-system T2m, precipitation, MSLP monthly maps and the Copernicus product description text.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-head">
+        <div>
+          <div class="eyebrow">Slide 1</div>
+          <h2 class="title">기온 3개월 전망: Tercile이 주 판단, Anomaly가 강하게 지지</h2>
+          <p class="subtitle">상단은 `tercile summary`, 하단은 `ensemble mean anomaly`입니다. 한반도와 일본, 동중국을 중심으로 warm signal이 3개월 내내 연속적으로 나타납니다.</p>
+        </div>
+        <div class="slide-no">Temperature</div>
+      </div>
+
+      <div class="image-grid double">
+        <figure><img src="c3s_assets/t2m_tsum_2026-05.png" alt="2026-05 temperature tercile" /><figcaption>2026-05 tercile summary</figcaption></figure>
+        <figure><img src="c3s_assets/t2m_tsum_2026-06.png" alt="2026-06 temperature tercile" /><figcaption>2026-06 tercile summary</figcaption></figure>
+        <figure><img src="c3s_assets/t2m_tsum_2026-07.png" alt="2026-07 temperature tercile" /><figcaption>2026-07 tercile summary</figcaption></figure>
+        <figure><img src="c3s_assets/t2m_ensm_2026-05.png" alt="2026-05 temperature anomaly" /><figcaption>2026-05 ensemble mean anomaly</figcaption></figure>
+        <figure><img src="c3s_assets/t2m_ensm_2026-06.png" alt="2026-06 temperature anomaly" /><figcaption>2026-06 ensemble mean anomaly</figcaption></figure>
+        <figure><img src="c3s_assets/t2m_ensm_2026-07.png" alt="2026-07 temperature anomaly" /><figcaption>2026-07 ensemble mean anomaly</figcaption></figure>
+      </div>
+
+      <div class="summary-box">
+        <div class="panel">
+          <h3>월별 판독</h3>
+          <ul>
+            <li><strong>5월</strong>: 한반도는 상위 tercile 우세, anomaly도 대체로 `+1°C` 안팎으로 온난합니다.</li>
+            <li><strong>6월</strong>: 세 달 중 warm signal이 가장 응집적입니다. 한반도와 일본 주변의 고온 우세가 강화됩니다.</li>
+            <li><strong>7월</strong>: 여전히 상위 tercile 우세입니다. 다만 북중국 일부는 6월보다 약해집니다.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>운영 문안</h3>
+          <ul>
+            <li><strong>M+1</strong>: 평년보다 높을 가능성 높음</li>
+            <li><strong>M+2</strong>: 평년보다 높을 가능성 매우 높음</li>
+            <li><strong>M+3</strong>: 평년보다 높을 가능성 높음</li>
+            <li>결론: 기온은 `C3S multi-system만으로도 비교적 강한 객관 근거`를 제시할 수 있습니다.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-head">
+        <div>
+          <div class="eyebrow">Slide 2</div>
+          <h2 class="title">강수 3개월 전망: 약한 습윤 경향은 보이지만, 신호는 기온보다 훨씬 약함</h2>
+          <p class="subtitle">강수는 `tercile summary`와 `ensemble mean anomaly`를 함께 보더라도 한반도 자체가 강한 wet core에 놓이지 않습니다. 따라서 `약한 경향` 중심으로 읽는 것이 더 합리적입니다.</p>
+        </div>
+        <div class="slide-no">Precipitation</div>
+      </div>
+
+      <div class="image-grid double">
+        <figure><img src="c3s_assets/rain_tsum_2026-05.png" alt="2026-05 precipitation tercile" /><figcaption>2026-05 tercile summary</figcaption></figure>
+        <figure><img src="c3s_assets/rain_tsum_2026-06.png" alt="2026-06 precipitation tercile" /><figcaption>2026-06 tercile summary</figcaption></figure>
+        <figure><img src="c3s_assets/rain_tsum_2026-07.png" alt="2026-07 precipitation tercile" /><figcaption>2026-07 tercile summary</figcaption></figure>
+        <figure><img src="c3s_assets/rain_ensm_2026-05.png" alt="2026-05 precipitation anomaly" /><figcaption>2026-05 ensemble mean anomaly</figcaption></figure>
+        <figure><img src="c3s_assets/rain_ensm_2026-06.png" alt="2026-06 precipitation anomaly" /><figcaption>2026-06 ensemble mean anomaly</figcaption></figure>
+        <figure><img src="c3s_assets/rain_ensm_2026-07.png" alt="2026-07 precipitation anomaly" /><figcaption>2026-07 ensemble mean anomaly</figcaption></figure>
+      </div>
+
+      <div class="summary-box">
+        <div class="panel">
+          <h3>월별 판독</h3>
+          <ul>
+            <li><strong>5월</strong>: 한반도는 약한 상위 tercile 또는 중립 경계. 강수 증가 중심은 남쪽 해역 쪽이 더 분명합니다.</li>
+            <li><strong>6월</strong>: 한반도는 near-normal에서 약한 상위 tercile 쪽. 남중국-대만-필리핀 주변이 더 강합니다.</li>
+            <li><strong>7월</strong>: 열대 서태평양과 남쪽 해역 습윤 anomaly가 강하고, 한반도는 약한 습윤 또는 중립으로 보는 편이 안전합니다.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>운영 문안</h3>
+          <ul>
+            <li><strong>M+1</strong>: 평년과 비슷하거나 다소 많을 가능성</li>
+            <li><strong>M+2</strong>: 평년과 비슷하거나 다소 많을 가능성</li>
+            <li><strong>M+3</strong>: 평년 또는 평년보다 조금 많을 가능성</li>
+            <li>결론: 강수는 `wet call`을 강하게 주기보다 `약한 습윤 경향 + 낮은 신뢰도`로 표현하는 것이 객관적입니다.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-head">
+        <div>
+          <div class="eyebrow">Slide 3</div>
+          <h2 class="title">MSLP는 보조 순환 진단 자료로 쓰는 것이 합리적</h2>
+          <p class="subtitle">MSLP 차트는 기온·강수의 범주 전망을 직접 결정하는 지도가 아니라, 동아시아-서북태평양 대기순환 배경이 앞선 해석과 충돌하는지 확인하는 보조 자료입니다.</p>
+        </div>
+        <div class="slide-no">MSLP Support</div>
+      </div>
+
+      <div class="image-grid">
+        <figure><img src="c3s_assets/mslp_ensm_2026-05.svg" alt="2026-05 mslp anomaly" /><figcaption>2026-05 MSLP ensemble mean anomaly</figcaption></figure>
+        <figure><img src="c3s_assets/mslp_ensm_2026-06.svg" alt="2026-06 mslp anomaly" /><figcaption>2026-06 MSLP ensemble mean anomaly</figcaption></figure>
+        <figure><img src="c3s_assets/mslp_ensm_2026-07.svg" alt="2026-07 mslp anomaly" /><figcaption>2026-07 MSLP ensemble mean anomaly</figcaption></figure>
+      </div>
+
+      <div class="grid-2">
+        <div class="panel">
+          <h3>왜 보조 자료인가</h3>
+          <ul>
+            <li>MSLP는 circulation regime을 보여주지만, 한반도 기온·강수 tercile을 직접 제공하지 않습니다.</li>
+            <li>강수는 front 위치, monsoon, PJ, BSISO 같은 계절내 요인 영향이 커서 MSLP만으로 강한 wet/ dry 판정이 어렵습니다.</li>
+            <li>따라서 `tercile -> anomaly -> MSLP` 순으로 읽는 것이 객관적입니다.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>이번 해석에서의 역할</h3>
+          <ul>
+            <li>기온의 광역 warm signal을 뒤집을 정도의 명확한 반대 circulation 신호를 강하게 주장할 근거는 크지 않습니다.</li>
+            <li>반면 강수는 MSLP를 보더라도 한반도에서 강한 일방향 wet signal로 확정하기보다, `약한 습윤 또는 near-normal` 해석이 더 안전합니다.</li>
+            <li>즉, `MSLP는 기온 신호를 보조적으로 지지`, `강수 신호는 과신을 억제`하는 역할로 해석합니다.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide-head">
+        <div>
+          <div class="eyebrow">Slide 4</div>
+          <h2 class="title">최종 종합 결론</h2>
+          <p class="subtitle">C3S multi-system 결과만을 기준으로 보면, 한반도는 `기온 고온 우세`가 가장 분명하고, `강수는 약한 습윤 경향 또는 near-normal`로 보는 것이 가장 객관적입니다.</p>
+        </div>
+        <div class="slide-no">Summary</div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>대상월</th>
+            <th>기온</th>
+            <th>강수</th>
+            <th>해석 포인트</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2026-05</td>
+            <td>평년보다 높음 우세</td>
+            <td>평년~평년보다 많음</td>
+            <td>기온 warm signal은 강함. 강수는 약한 습윤 경향 수준</td>
+          </tr>
+          <tr>
+            <td>2026-06</td>
+            <td>평년보다 높음 우세</td>
+            <td>평년~평년보다 많음</td>
+            <td>기온은 3개월 중 가장 일관적. 강수는 여전히 강도 약함</td>
+          </tr>
+          <tr>
+            <td>2026-07</td>
+            <td>평년보다 높음 우세</td>
+            <td>평년 또는 다소 많음</td>
+            <td>고온 지속. 강수는 열대 해역 신호가 더 강하고 한반도는 약함</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="grid-2" style="margin-top: 20px;">
+        <div class="panel">
+          <h3>실무용 한 줄 문안</h3>
+          <ul>
+            <li><strong>기온</strong>: `M+1~M+3 모두 평년보다 높을 가능성이 우세`</li>
+            <li><strong>강수</strong>: `M+1~M+3 모두 평년과 비슷하거나 다소 많을 가능성이 있으나 신호는 약함`</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>자료 출처</h3>
+          <ul>
+            <li>C3S multi-system T2m 1-month maps (`tsum`, `ensm`)</li>
+            <li>C3S multi-system precipitation 1-month maps (`tsum`, `ensm`)</li>
+            <li>C3S multi-system MSLP 1-month maps (`ensm`)</li>
+            <li>C3S product description on equal-weight multi-system combination and 1993-2016 hindcast reference</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer">
+        Base time: 2026-04-01 00 UTC. Domain: area09 (East Asia). This slide deck intentionally treats tercile maps as the primary outlook product and anomaly/MSLP as supporting diagnostics.
+      </div>
+    </section>
+  </div>
+</body>
+</html>

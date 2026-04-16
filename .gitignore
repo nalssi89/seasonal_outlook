@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+src/*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+state/objective_forecast/
+state/psl_indices/
+
+*.log
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,722 @@
+issue_date = "2026-04-15"
+
+[[priors]]
+model_id = "c3s"
+region = "korea"
+variable = "temperature"
+lead = 1
+lower = 0.20
+normal = 0.33
+upper = 0.47
+rpss_recent = 0.22
+rpss_all = 0.18
+bss_recent = 0.17
+bss_all = 0.12
+acc_recent = 0.31
+acc_all = 0.28
+
+[[priors]]
+model_id = "c3s"
+region = "korea"
+variable = "temperature"
+lead = 2
+lower = 0.21
+normal = 0.34
+upper = 0.45
+rpss_recent = 0.22
+rpss_all = 0.18
+bss_recent = 0.17
+bss_all = 0.12
+acc_recent = 0.31
+acc_all = 0.28
+
+[[priors]]
+model_id = "c3s"
+region = "korea"
+variable = "temperature"
+lead = 3
+lower = 0.23
+normal = 0.35
+upper = 0.42
+rpss_recent = 0.22
+rpss_all = 0.18
+bss_recent = 0.17
+bss_all = 0.12
+acc_recent = 0.31
+acc_all = 0.28
+
+[[priors]]
+model_id = "c3s"
+region = "korea"
+variable = "precipitation"
+lead = 1
+lower = 0.27
+normal = 0.37
+upper = 0.36
+rpss_recent = 0.19
+rpss_all = 0.15
+bss_recent = 0.13
+bss_all = 0.09
+acc_recent = 0.25
+acc_all = 0.22
+
+[[priors]]
+model_id = "c3s"
+region = "korea"
+variable = "precipitation"
+lead = 2
+lower = 0.25
+normal = 0.35
+upper = 0.40
+rpss_recent = 0.19
+rpss_all = 0.15
+bss_recent = 0.13
+bss_all = 0.09
+acc_recent = 0.25
+acc_all = 0.22
+
+[[priors]]
+model_id = "c3s"
+region = "korea"
+variable = "precipitation"
+lead = 3
+lower = 0.24
+normal = 0.33
+upper = 0.43
+rpss_recent = 0.19
+rpss_all = 0.15
+bss_recent = 0.13
+bss_all = 0.09
+acc_recent = 0.25
+acc_all = 0.22
+
+[[priors]]
+model_id = "c3s"
+region = "east_asia"
+variable = "temperature"
+lead = 1
+lower = 0.18
+normal = 0.31
+upper = 0.51
+rpss_recent = 0.24
+rpss_all = 0.19
+bss_recent = 0.18
+bss_all = 0.13
+acc_recent = 0.34
+acc_all = 0.30
+
+[[priors]]
+model_id = "c3s"
+region = "east_asia"
+variable = "temperature"
+lead = 2
+lower = 0.19
+normal = 0.33
+upper = 0.48
+rpss_recent = 0.24
+rpss_all = 0.19
+bss_recent = 0.18
+bss_all = 0.13
+acc_recent = 0.34
+acc_all = 0.30
+
+[[priors]]
+model_id = "c3s"
+region = "east_asia"
+variable = "temperature"
+lead = 3
+lower = 0.21
+normal = 0.34
+upper = 0.45
+rpss_recent = 0.24
+rpss_all = 0.19
+bss_recent = 0.18
+bss_all = 0.13
+acc_recent = 0.34
+acc_all = 0.30
+
+[[priors]]
+model_id = "c3s"
+region = "east_asia"
+variable = "precipitation"
+lead = 1
+lower = 0.26
+normal = 0.38
+upper = 0.36
+rpss_recent = 0.18
+rpss_all = 0.13
+bss_recent = 0.12
+bss_all = 0.08
+acc_recent = 0.22
+acc_all = 0.19
+
+[[priors]]
+model_id = "c3s"
+region = "east_asia"
+variable = "precipitation"
+lead = 2
+lower = 0.24
+normal = 0.36
+upper = 0.40
+rpss_recent = 0.18
+rpss_all = 0.13
+bss_recent = 0.12
+bss_all = 0.08
+acc_recent = 0.22
+acc_all = 0.19
+
+[[priors]]
+model_id = "c3s"
+region = "east_asia"
+variable = "precipitation"
+lead = 3
+lower = 0.22
+normal = 0.35
+upper = 0.43
+rpss_recent = 0.18
+rpss_all = 0.13
+bss_recent = 0.12
+bss_all = 0.08
+acc_recent = 0.22
+acc_all = 0.19
+
+[[priors]]
+model_id = "nmme"
+region = "korea"
+variable = "temperature"
+lead = 1
+lower = 0.22
+normal = 0.35
+upper = 0.43
+rpss_recent = 0.18
+rpss_all = 0.15
+bss_recent = 0.14
+bss_all = 0.10
+acc_recent = 0.29
+acc_all = 0.25
+
+[[priors]]
+model_id = "nmme"
+region = "korea"
+variable = "temperature"
+lead = 2
+lower = 0.23
+normal = 0.36
+upper = 0.41
+rpss_recent = 0.18
+rpss_all = 0.15
+bss_recent = 0.14
+bss_all = 0.10
+acc_recent = 0.29
+acc_all = 0.25
+
+[[priors]]
+model_id = "nmme"
+region = "korea"
+variable = "temperature"
+lead = 3
+lower = 0.24
+normal = 0.36
+upper = 0.40
+rpss_recent = 0.18
+rpss_all = 0.15
+bss_recent = 0.14
+bss_all = 0.10
+acc_recent = 0.29
+acc_all = 0.25
+
+[[priors]]
+model_id = "nmme"
+region = "korea"
+variable = "precipitation"
+lead = 1
+lower = 0.29
+normal = 0.35
+upper = 0.36
+rpss_recent = 0.16
+rpss_all = 0.12
+bss_recent = 0.10
+bss_all = 0.07
+acc_recent = 0.20
+acc_all = 0.18
+
+[[priors]]
+model_id = "nmme"
+region = "korea"
+variable = "precipitation"
+lead = 2
+lower = 0.27
+normal = 0.34
+upper = 0.39
+rpss_recent = 0.16
+rpss_all = 0.12
+bss_recent = 0.10
+bss_all = 0.07
+acc_recent = 0.20
+acc_all = 0.18
+
+[[priors]]
+model_id = "nmme"
+region = "korea"
+variable = "precipitation"
+lead = 3
+lower = 0.25
+normal = 0.34
+upper = 0.41
+rpss_recent = 0.16
+rpss_all = 0.12
+bss_recent = 0.10
+bss_all = 0.07
+acc_recent = 0.20
+acc_all = 0.18
+
+[[priors]]
+model_id = "nmme"
+region = "east_asia"
+variable = "temperature"
+lead = 1
+lower = 0.19
+normal = 0.34
+upper = 0.47
+rpss_recent = 0.20
+rpss_all = 0.17
+bss_recent = 0.15
+bss_all = 0.11
+acc_recent = 0.30
+acc_all = 0.27
+
+[[priors]]
+model_id = "nmme"
+region = "east_asia"
+variable = "temperature"
+lead = 2
+lower = 0.20
+normal = 0.35
+upper = 0.45
+rpss_recent = 0.20
+rpss_all = 0.17
+bss_recent = 0.15
+bss_all = 0.11
+acc_recent = 0.30
+acc_all = 0.27
+
+[[priors]]
+model_id = "nmme"
+region = "east_asia"
+variable = "temperature"
+lead = 3
+lower = 0.22
+normal = 0.35
+upper = 0.43
+rpss_recent = 0.20
+rpss_all = 0.17
+bss_recent = 0.15
+bss_all = 0.11
+acc_recent = 0.30
+acc_all = 0.27
+
+[[priors]]
+model_id = "nmme"
+region = "east_asia"
+variable = "precipitation"
+lead = 1
+lower = 0.28
+normal = 0.37
+upper = 0.35
+rpss_recent = 0.15
+rpss_all = 0.11
+bss_recent = 0.09
+bss_all = 0.06
+acc_recent = 0.18
+acc_all = 0.16
+
+[[priors]]
+model_id = "nmme"
+region = "east_asia"
+variable = "precipitation"
+lead = 2
+lower = 0.26
+normal = 0.35
+upper = 0.39
+rpss_recent = 0.15
+rpss_all = 0.11
+bss_recent = 0.09
+bss_all = 0.06
+acc_recent = 0.18
+acc_all = 0.16
+
+[[priors]]
+model_id = "nmme"
+region = "east_asia"
+variable = "precipitation"
+lead = 3
+lower = 0.24
+normal = 0.34
+upper = 0.42
+rpss_recent = 0.15
+rpss_all = 0.11
+bss_recent = 0.09
+bss_all = 0.06
+acc_recent = 0.18
+acc_all = 0.16
+
+[[priors]]
+model_id = "cfsv2"
+region = "korea"
+variable = "temperature"
+lead = 1
+lower = 0.24
+normal = 0.34
+upper = 0.42
+rpss_recent = 0.15
+rpss_all = 0.11
+bss_recent = 0.11
+bss_all = 0.08
+acc_recent = 0.24
+acc_all = 0.21
+
+[[priors]]
+model_id = "cfsv2"
+region = "korea"
+variable = "temperature"
+lead = 2
+lower = 0.25
+normal = 0.35
+upper = 0.40
+rpss_recent = 0.15
+rpss_all = 0.11
+bss_recent = 0.11
+bss_all = 0.08
+acc_recent = 0.24
+acc_all = 0.21
+
+[[priors]]
+model_id = "cfsv2"
+region = "korea"
+variable = "temperature"
+lead = 3
+lower = 0.26
+normal = 0.36
+upper = 0.38
+rpss_recent = 0.15
+rpss_all = 0.11
+bss_recent = 0.11
+bss_all = 0.08
+acc_recent = 0.24
+acc_all = 0.21
+
+[[priors]]
+model_id = "cfsv2"
+region = "korea"
+variable = "precipitation"
+lead = 1
+lower = 0.30
+normal = 0.36
+upper = 0.34
+rpss_recent = 0.12
+rpss_all = 0.09
+bss_recent = 0.08
+bss_all = 0.05
+acc_recent = 0.17
+acc_all = 0.14
+
+[[priors]]
+model_id = "cfsv2"
+region = "korea"
+variable = "precipitation"
+lead = 2
+lower = 0.28
+normal = 0.35
+upper = 0.37
+rpss_recent = 0.12
+rpss_all = 0.09
+bss_recent = 0.08
+bss_all = 0.05
+acc_recent = 0.17
+acc_all = 0.14
+
+[[priors]]
+model_id = "cfsv2"
+region = "korea"
+variable = "precipitation"
+lead = 3
+lower = 0.26
+normal = 0.35
+upper = 0.39
+rpss_recent = 0.12
+rpss_all = 0.09
+bss_recent = 0.08
+bss_all = 0.05
+acc_recent = 0.17
+acc_all = 0.14
+
+[[priors]]
+model_id = "cfsv2"
+region = "east_asia"
+variable = "temperature"
+lead = 1
+lower = 0.21
+normal = 0.34
+upper = 0.45
+rpss_recent = 0.17
+rpss_all = 0.13
+bss_recent = 0.12
+bss_all = 0.09
+acc_recent = 0.26
+acc_all = 0.23
+
+[[priors]]
+model_id = "cfsv2"
+region = "east_asia"
+variable = "temperature"
+lead = 2
+lower = 0.22
+normal = 0.35
+upper = 0.43
+rpss_recent = 0.17
+rpss_all = 0.13
+bss_recent = 0.12
+bss_all = 0.09
+acc_recent = 0.26
+acc_all = 0.23
+
+[[priors]]
+model_id = "cfsv2"
+region = "east_asia"
+variable = "temperature"
+lead = 3
+lower = 0.24
+normal = 0.35
+upper = 0.41
+rpss_recent = 0.17
+rpss_all = 0.13
+bss_recent = 0.12
+bss_all = 0.09
+acc_recent = 0.26
+acc_all = 0.23
+
+[[priors]]
+model_id = "cfsv2"
+region = "east_asia"
+variable = "precipitation"
+lead = 1
+lower = 0.29
+normal = 0.37
+upper = 0.34
+rpss_recent = 0.11
+rpss_all = 0.08
+bss_recent = 0.07
+bss_all = 0.04
+acc_recent = 0.15
+acc_all = 0.12
+
+[[priors]]
+model_id = "cfsv2"
+region = "east_asia"
+variable = "precipitation"
+lead = 2
+lower = 0.27
+normal = 0.36
+upper = 0.37
+rpss_recent = 0.11
+rpss_all = 0.08
+bss_recent = 0.07
+bss_all = 0.04
+acc_recent = 0.15
+acc_all = 0.12
+
+[[priors]]
+model_id = "cfsv2"
+region = "east_asia"
+variable = "precipitation"
+lead = 3
+lower = 0.25
+normal = 0.35
+upper = 0.40
+rpss_recent = 0.11
+rpss_all = 0.08
+bss_recent = 0.07
+bss_all = 0.04
+acc_recent = 0.15
+acc_all = 0.12
+
+[[priors]]
+model_id = "jma"
+region = "korea"
+variable = "temperature"
+lead = 1
+lower = 0.21
+normal = 0.34
+upper = 0.45
+rpss_recent = 0.20
+rpss_all = 0.17
+bss_recent = 0.15
+bss_all = 0.11
+acc_recent = 0.30
+acc_all = 0.27
+
+[[priors]]
+model_id = "jma"
+region = "korea"
+variable = "temperature"
+lead = 2
+lower = 0.22
+normal = 0.35
+upper = 0.43
+rpss_recent = 0.20
+rpss_all = 0.17
+bss_recent = 0.15
+bss_all = 0.11
+acc_recent = 0.30
+acc_all = 0.27
+
+[[priors]]
+model_id = "jma"
+region = "korea"
+variable = "temperature"
+lead = 3
+lower = 0.23
+normal = 0.35
+upper = 0.42
+rpss_recent = 0.20
+rpss_all = 0.17
+bss_recent = 0.15
+bss_all = 0.11
+acc_recent = 0.30
+acc_all = 0.27
+
+[[priors]]
+model_id = "jma"
+region = "korea"
+variable = "precipitation"
+lead = 1
+lower = 0.28
+normal = 0.36
+upper = 0.36
+rpss_recent = 0.17
+rpss_all = 0.13
+bss_recent = 0.11
+bss_all = 0.08
+acc_recent = 0.22
+acc_all = 0.19
+
+[[priors]]
+model_id = "jma"
+region = "korea"
+variable = "precipitation"
+lead = 2
+lower = 0.26
+normal = 0.34
+upper = 0.40
+rpss_recent = 0.17
+rpss_all = 0.13
+bss_recent = 0.11
+bss_all = 0.08
+acc_recent = 0.22
+acc_all = 0.19
+
+[[priors]]
+model_id = "jma"
+region = "korea"
+variable = "precipitation"
+lead = 3
+lower = 0.25
+normal = 0.33
+upper = 0.42
+rpss_recent = 0.17
+rpss_all = 0.13
+bss_recent = 0.11
+bss_all = 0.08
+acc_recent = 0.22
+acc_all = 0.19
+
+[[priors]]
+model_id = "jma"
+region = "east_asia"
+variable = "temperature"
+lead = 1
+lower = 0.18
+normal = 0.33
+upper = 0.49
+rpss_recent = 0.22
+rpss_all = 0.18
+bss_recent = 0.16
+bss_all = 0.12
+acc_recent = 0.32
+acc_all = 0.29
+
+[[priors]]
+model_id = "jma"
+region = "east_asia"
+variable = "temperature"
+lead = 2
+lower = 0.20
+normal = 0.34
+upper = 0.46
+rpss_recent = 0.22
+rpss_all = 0.18
+bss_recent = 0.16
+bss_all = 0.12
+acc_recent = 0.32
+acc_all = 0.29
+
+[[priors]]
+model_id = "jma"
+region = "east_asia"
+variable = "temperature"
+lead = 3
+lower = 0.21
+normal = 0.35
+upper = 0.44
+rpss_recent = 0.22
+rpss_all = 0.18
+bss_recent = 0.16
+bss_all = 0.12
+acc_recent = 0.32
+acc_all = 0.29
+
+[[priors]]
+model_id = "jma"
+region = "east_asia"
+variable = "precipitation"
+lead = 1
+lower = 0.27
+normal = 0.37
+upper = 0.36
+rpss_recent = 0.16
+rpss_all = 0.12
+bss_recent = 0.10
+bss_all = 0.07
+acc_recent = 0.20
+acc_all = 0.17
+
+[[priors]]
+model_id = "jma"
+region = "east_asia"
+variable = "precipitation"
+lead = 2
+lower = 0.25
+normal = 0.35
+upper = 0.40
+rpss_recent = 0.16
+rpss_all = 0.12
+bss_recent = 0.10
+bss_all = 0.07
+acc_recent = 0.20
+acc_all = 0.17
+
+[[priors]]
+model_id = "jma"
+region = "east_asia"
+variable = "precipitation"
+lead = 3
+lower = 0.24
+normal = 0.34
+upper = 0.42
+rpss_recent = 0.16
+rpss_all = 0.12
+bss_recent = 0.10
+bss_all = 0.07
+acc_recent = 0.20
+acc_all = 0.17
+

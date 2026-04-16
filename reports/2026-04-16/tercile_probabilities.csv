@@ -1,0 +1,13 @@
+issue_date,region,variable,lead,target_year,target_month,lower,normal,upper,dominant_category,total_adjustment,model_agreement
+2026-04-16,korea,temperature,1,2026,5,0.2119,0.3388,0.4493,upper,0.0000,1.0000
+2026-04-16,korea,temperature,2,2026,6,0.2219,0.3488,0.4293,upper,0.0000,1.0000
+2026-04-16,korea,temperature,3,2026,7,0.2356,0.3535,0.4109,upper,0.0000,1.0000
+2026-04-16,korea,precipitation,1,2026,5,0.2807,0.3615,0.3578,normal,0.0000,0.7500
+2026-04-16,korea,precipitation,2,2026,6,0.2607,0.3450,0.3944,upper,0.0000,1.0000
+2026-04-16,korea,precipitation,3,2026,7,0.2472,0.3346,0.4182,upper,0.0000,1.0000
+2026-04-16,east_asia,temperature,1,2026,5,0.1856,0.3260,0.4884,upper,0.0000,1.0000
+2026-04-16,east_asia,temperature,2,2026,6,0.1984,0.3397,0.4619,upper,0.0000,1.0000
+2026-04-16,east_asia,temperature,3,2026,7,0.2156,0.3463,0.4382,upper,0.0000,1.0000
+2026-04-16,east_asia,precipitation,1,2026,5,0.2708,0.3738,0.3554,normal,0.0000,1.0000
+2026-04-16,east_asia,precipitation,2,2026,6,0.2508,0.3549,0.3944,upper,0.0000,1.0000
+2026-04-16,east_asia,precipitation,3,2026,7,0.2335,0.3449,0.4216,upper,0.0000,1.0000
